@@ -1,0 +1,3 @@
+file	contrast	N_permutations	value	p-value
+master_doc13.txt	pro-russia.pro-ukraine.good.bad	1000	-0.04190000000000002	0.632
+master_doc13.txt	mean	1000	-0.04190000000000002	0.632
