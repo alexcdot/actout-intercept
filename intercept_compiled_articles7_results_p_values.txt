@@ -1,0 +1,3 @@
+file	contrast	N_permutations	value	p-value
+compiled_articles7.txt	Tory.Ford.good.bad	1000	-0.1444	0.394
+compiled_articles7.txt	mean	1000	-0.1444	0.394

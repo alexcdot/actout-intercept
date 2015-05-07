@@ -263,3 +263,7 @@ STOP_FILE = '"+dir_path+"/stopwords.txt'
 NORMALIZE_WEIGHTS = false
 "
 File.write(dir_path+'/default.spec', spec)
+
+contrasts = keyword_a+" "+keyword_b+" good bad"
+
+File.write(dir_path+'/contrasts.txt', contrasts)

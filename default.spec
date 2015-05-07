@@ -2,7 +2,7 @@
 CONTRAST_FILE = 'C:/Users/Alex/Documents/GitHub/actout-intercept/contrasts.txt'
 
 FILES = [
-  'C:/Users/Alex/Documents/GitHub/actout-intercept/compiled_articles3.txt'
+  'C:/Users/Alex/Documents/GitHub/actout-intercept/compiled_articles14.txt'
 ]
 
 OUTPUT_ROOT = 'C:/Users/Alex/Documents/GitHub/actout-intercept/intercept'
@@ -175,14 +175,9 @@ RECODE = {
   'constitutional' => 'good',
   'flawless' => 'good',
   'optimal' => 'good',
-  'al-qaeda' => 'terrorist',
-'hijacker' => 'terrorist',
-'attacker' => 'terrorist',
-'muslim' => 'terrorist',
-'troops' => 'america',
-'american' => 'america',
-'civilian' => 'america',
-'citizen' => 'america',
+  'progressive' => 'Chow',
+'conservative' => 'Ford',
+'subway' => 'Ford',
 'superior' => 'good'
 
 }

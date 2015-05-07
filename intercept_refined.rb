@@ -130,4 +130,15 @@ File.foreach(dir_path+"/intercept_compiled_articles"+doc_number.to_s+"_results_p
     break
   end
 end
-puts string
+
+string_array = string.split(/[^A-Za-z0-9_\-\.*\/]/)
+#string_array = string_array.reject! { |c| c.empty? }
+
+results = "
+Positive bias for keyword A: "+string_array[11]+"
+Negative bias for keyword A: "+string_array[12]+"
+Positive bias for keyword B: "+string_array[13]+"
+Negative bias for keyword B: "+string_array[14]+"
+Overall bias: "+string_array[15]
+
+puts results
