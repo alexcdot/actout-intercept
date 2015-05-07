@@ -1,11 +1,76 @@
+dir_path = File.dirname(__FILE__)
 
-CONTRAST_FILE = 'C:/Users/Alex/Documents/GitHub/actout-intercept/contrasts.txt'
+string = ""
+open (dir_path+"/config.txt") { |f|
+string = f.read
+}
+
+string_array = string.split(/[^A-Za-z0-9_\-\.*\/]/)
+string_array = string_array.reject! { |c| c.empty? }
+
+=begin
+string_array.each do |split_string|
+  puts split_string + "\n ------------------"
+end
+=end
+title_terms = []
+synonyms_of_a = []
+synonyms_of_b = []
+
+for i in 0..string_array.length
+  case string_array[i]
+  when "Start_Year"
+    for j in 3..i-1
+      title_terms.insert(-1, string_array[j])
+    end
+  when "Synonyms_Of_A"
+    synonyms_of_a_start = i
+  when "Synonyms_Of_B"
+    for j in (synonyms_of_a_start+1)..i-1
+      synonyms_of_a.insert(-1,string_array[j])
+    end
+    for j in (i+1)..string_array.length-1
+      synonyms_of_b.insert(-1, string_array[j])
+    end
+  end
+   #puts "Value of local variable is #{i}"
+end
+
+newspaper = string_array[1]
+start_year = string_array[4+title_terms.length]
+start_month = string_array[6+title_terms.length]
+start_day = string_array[8+title_terms.length]
+end_year = string_array[10+title_terms.length]
+end_month = string_array[12+title_terms.length]
+end_day = string_array[14+title_terms.length]
+keyword_a = string_array[16+title_terms.length]
+keyword_b = string_array[18+title_terms.length]
+article_count = string_array [20+title_terms.length]
+
+CONFIG_ARRAY =[newspaper, title_terms, start_year, start_month, start_day, end_year, end_month, end_day, keyword_a, keyword_b, article_count, synonyms_of_a, synonyms_of_b]
+
+processed_words = ""
+synonyms_of_a.each do |word|
+  processed_words += %Q(') + word + %Q(' => ')+ keyword_a +%Q(',) + "\n"
+end
+synonyms_of_b.each do |word|
+  processed_words += %Q(') + word + %Q(' => ')+ keyword_b +%Q(',) + "\n"
+end
+#puts processed_words
+
+doc_number = 1
+while File.file? (dir_path+'/compiled_articles'+doc_number.to_s+".txt")
+  doc_number +=1
+end
+
+spec = "
+CONTRAST_FILE = '"+dir_path+"/contrasts.txt'
 
 FILES = [
-  'C:/Users/Alex/Documents/GitHub/actout-intercept/compiled_articles3.txt'
+  '"+dir_path+"/compiled_articles"+doc_number.to_s+".txt'
 ]
 
-OUTPUT_ROOT = 'C:/Users/Alex/Documents/GitHub/actout-intercept/intercept'
+OUTPUT_ROOT = '"+dir_path+"/intercept'
 
 VERBOSE = true
 
@@ -175,15 +240,8 @@ RECODE = {
   'constitutional' => 'good',
   'flawless' => 'good',
   'optimal' => 'good',
-  'al-qaeda' => 'terrorist',
-'hijacker' => 'terrorist',
-'attacker' => 'terrorist',
-'muslim' => 'terrorist',
-'troops' => 'america',
-'american' => 'america',
-'civilian' => 'america',
-'citizen' => 'america',
-'superior' => 'good'
+  "+processed_words+
+  "'superior' => 'good'
 
 }
 
@@ -200,6 +258,8 @@ MIN_PROP = 0.00001
 
 MAX_PROP = 1
 
-STOP_FILE = 'C:/Users/Alex/Documents/GitHub/actout-intercept/stopwords.txt'
+STOP_FILE = '"+dir_path+"/stopwords.txt'
 
 NORMALIZE_WEIGHTS = false
+"
+File.write(dir_path+'/default.spec', spec)

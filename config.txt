@@ -1,0 +1,17 @@
+Newspaper: thestar.com
+Title_Terms: Rob Ford
+Start_Year: 2010
+Start_Month: 9
+Start_Day: 10
+End_Year: 2014
+End_Month: 10
+End_Day: 21
+
+Keyword_A: terrorist
+Keyword_B: america
+
+Number_Of_Articles: 2
+
+Synonyms_Of_A: al-qaeda, hijacker, attacker, muslim
+Synonyms_Of_B: troops, american, civilian, citizen
+
