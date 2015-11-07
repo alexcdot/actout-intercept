@@ -1,0 +1,3 @@
+file	contrast	N_permutations	value	p-value
+compiled_articles4.txt	Obama.Romney.good.bad	1000	0.007300000000000029	0.97
+compiled_articles4.txt	mean	1000	0.007300000000000029	0.97

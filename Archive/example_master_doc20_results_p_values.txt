@@ -1,0 +1,3 @@
+file	contrast	N_permutations	value	p-value
+master_doc20.txt	terrorist.america.good.bad	1000	0.016399999999999998	0.976
+master_doc20.txt	mean	1000	0.016399999999999998	0.976

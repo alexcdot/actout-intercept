@@ -1,0 +1,3 @@
+file	contrast	N_permutations	value	p-value
+compiled_articles14.txt	Chow.Ford.good.bad	1000	-0.07550000000000001	0.442
+compiled_articles14.txt	mean	1000	-0.07550000000000001	0.442

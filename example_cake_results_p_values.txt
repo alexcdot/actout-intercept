@@ -1,3 +1,0 @@
-file	contrast	N_permutations	value	p-value
-cake.txt	cake.spinach.good.bad	1000	0.27320000000000005	0.0
-cake.txt	mean	1000	0.27320000000000005	0.0

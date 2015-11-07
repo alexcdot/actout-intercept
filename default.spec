@@ -1,11 +1,11 @@
 
-CONTRAST_FILE = 'C:/Users/Alex/Documents/GitHub/actout-intercept/contrasts.txt'
+CONTRAST_FILE = 'C:/Users/Alex/Documents/Intercept/testing_zone/test_may_21/contrasts.txt'
 
 FILES = [
-  'C:/Users/Alex/Documents/GitHub/actout-intercept/compiled_articles14.txt'
+  'C:/Users/Alex/Documents/Intercept/testing_zone/test_may_21/compiled_articles3.txt'
 ]
 
-OUTPUT_ROOT = 'C:/Users/Alex/Documents/GitHub/actout-intercept/intercept'
+OUTPUT_ROOT = 'C:/Users/Alex/Documents/Intercept/testing_zone/test_may_21/intercept'
 
 VERBOSE = true
 
@@ -175,7 +175,7 @@ RECODE = {
   'constitutional' => 'good',
   'flawless' => 'good',
   'optimal' => 'good',
-  'progressive' => 'Chow',
+  'progressive' => 'Tory',
 'conservative' => 'Ford',
 'subway' => 'Ford',
 'superior' => 'good'
@@ -195,6 +195,6 @@ MIN_PROP = 0.00001
 
 MAX_PROP = 1
 
-STOP_FILE = 'C:/Users/Alex/Documents/GitHub/actout-intercept/stopwords.txt'
+STOP_FILE = 'C:/Users/Alex/Documents/Intercept/testing_zone/test_may_21/stopwords.txt'
 
 NORMALIZE_WEIGHTS = false

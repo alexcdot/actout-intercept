@@ -1,0 +1,21 @@
+
+Sumamry of Media Analysis!
+
+Positive bias for tory: 0.1755
+Negative bias for tory: 0.1642
+Positive bias for ford: 0.1913
+Negative bias for ford: 0.2301
+Overall bias: 0.05009999999999998
+
+Articles that were Analyzed: 
+Olivia Chow links John Tory to Rob Ford | Toronto Star
+Toronto mayoral debate: Rob Ford, John Tory, Olivia Chow, Karen ...
+Rob Ford, Olivia Chow and John Tory back out of ... - Toronto Star
+Rob Ford? John Tory? Olivia Chow? Here's what matters | Toronto ...
+Doug Ford attacks John Tory as 'chauvinistic' and 'elite' | Toronto Star
+John Tory needs a robust counter-attack to win Toronto's mayoral ...
+John Tory, Karen Stintz launch campaigns for mayor | Toronto Star
+How John Tory can beat Rob Ford and Olivia Chow ... - Toronto Star
+Rob Ford loses backing of top fundraiser Ralph Lean in Toronto's ...
+John Tory announces candidacy for Toronto mayor | Toronto Star
+John Tory preparing to enter mayoral race: Hepburn | Toronto Star

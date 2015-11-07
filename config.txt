@@ -1,5 +1,5 @@
 Newspaper: thestar.com
-Title_Terms: Toronto, Election, Mayor
+Title_Terms: Toronto, Tory, Ford
 Start_Year: 2012
 Start_Month: 01
 Start_Day: 01
@@ -7,10 +7,10 @@ End_Year: 2014
 End_Month: 05
 End_Day: 01
 
-Keyword_A: Chow
+Keyword_A: Tory
 Keyword_B: Ford
 
-Number_Of_Articles: 5
+Number_Of_Articles: 10
 
 Synonyms_Of_A: progressive
 Synonyms_Of_B: conservative, subway
